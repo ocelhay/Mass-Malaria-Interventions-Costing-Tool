@@ -1,0 +1,20 @@
+div(class = 'section',
+    h4(icon('building'), 'Field Office'),
+    p('All costs below are for the field office, in US$ and per month.'), hr(),
+    sliderInput(inputId = "Fie_off", label = "Rental fees", value = 265, min = 0, max= 500, ticks = FALSE),
+    sliderInput(inputId = "Fie_electric", label = "Electricity", value = 150, min = 0, max= 500, ticks = FALSE),
+    sliderInput(inputId = "Fie_water", label = "Water bill", value = 65, min = 0, max= 500, ticks = FALSE),
+    sliderInput(inputId = "Fie_communication", label = "Communication charges", value = 310, min = 0, max= 500, ticks = FALSE),
+    sliderInput(inputId = "Fie_maintenance", label = "Office maintenance", value = 37, min = 0, max= 500, ticks = FALSE),
+    sliderInput(inputId = "Fie_stationery", label = "Stationery", value = 28, min = 0, max= 500, ticks = FALSE),
+    sliderInput(inputId = "Fie_mis", label = "Miscellaneous", value = 65, min = 0, max= 500, ticks = FALSE),
+    sliderInput(inputId = "Fie_staffhouse", label = "Staff house ", value = 250, min = 0, max= 500, ticks = FALSE),
+    sliderInput(inputId = "Fie_furniture", label = "Furniture expenses", value = 375, min = 0, max= 500, ticks = FALSE),
+    sliderInput(inputId = "Fie_IT", label = "Computer and other electronic appliances", value = 0, min = 0, max= 500, ticks = FALSE),
+    sliderInput(inputId = "Fie_running", label = "Office running activity", value = 1000, min = 0, max= 1000, ticks = FALSE),
+    sliderInput(inputId = "Fie_vehicle", label = "Procurement of vehicle and motorbike", value = 0, min = 0, max= 500, ticks = FALSE),
+    sliderInput(inputId = "Fie_vehicle_mainta", label = "Vehicle maintenance", value = 0, min = 0, max= 500, ticks = FALSE),
+    div(class = 'validation-checkbox',
+        prettyCheckbox(inputId = "common_field_valid", label = "Okay", icon = icon("check"), animation = "pulse", bigger = TRUE, status = "success")
+    )
+)
