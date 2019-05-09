@@ -9,8 +9,8 @@ ui <- function(request) { fluidPage(
   # Application title
   
   htmlOutput("total_cost"),
-  navbarPage("Mass Malaria Interventions Costing Tool",
-             tabPanel("Welcome", 
+  navbarPage("", windowTitle = "Mass Malaria Interventions Costing Tool",
+             tabPanel(strong("Mass Malaria Interventions Costing Tool"), 
                       includeMarkdown("www/intro.md"),
                       fluidRow(
                         column(6, includeMarkdown("www/intro_2.md")),
@@ -147,7 +147,7 @@ ui <- function(request) { fluidPage(
                                numericInput(inputId = "t6_no", label = NULL, value = 0)
                         ),
                         column(2,
-                               numericInput(inputId = "t1_value", label = "Price per item", value = 0),
+                               numericInput(inputId = "t1_value", label = "Price per item (in US$)", value = 0),
                                numericInput(inputId = "t2_value", label = NULL, value = 0),
                                numericInput(inputId = "t3_value", label = NULL, value = 0),
                                numericInput(inputId = "t4_value", label = NULL, value = 0),
