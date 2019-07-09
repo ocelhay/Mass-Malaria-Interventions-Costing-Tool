@@ -537,9 +537,9 @@ function(input, output, session) {
     d[d$category == "Training" & d$activity == "Mass Vaccination", "cost"] <- Trainingon * c_Train_Vaccine
     d[d$category == "Training" & d$activity == "Mass Vaccination + MDA", "cost"] <- Trainingon * c_Train_MVDA
     d[d$category == "Training" & d$activity == "Mass Vaccination + MSAT", "cost"] <- Trainingon * c_Train_MVSAT
-    d[d$category == "Training" & d$activity == "CHWs Program", "cost"] <- c_Consum_CHW
+    d[d$category == "Training" & d$activity == "CHWs Program", "cost"] <- Trainingon * c_Train_CHW
     d[d$category == "Training" & d$activity == "Distribution of ITNs", "cost"] <- 0
-    d[d$category == "Training" & d$activity == "Epidemiological studies", "cost"] <- c_Consum_research
+    d[d$category == "Training" & d$activity == "Epidemiological studies", "cost"] <- 0
 
     # Program
     d[d$category == "Program" & d$activity == "Community Engagement", "cost"] <- c_program_CE
